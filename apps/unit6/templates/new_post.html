@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Post Preview</title>
+		<link rel="stylesheet" type="text/css" href="/apps/unit6/templates/stylesheets/style.css">
+	</head>
+
+	<body>
+		<h1>Post Preview</h1>
+		<hr>
+
+		<div class="post">
+			<div class="post-subject">{{ post_lookup.subject }}</div>
+			<div class="post-content">{{ post_lookup.content }}</div>
+			<div class="post-date">{{ post_lookup.created }}</div>
+			<hr>
+		</div>
+		<div class="last_queried">Queried {{ last_queried }} seconds ago</div>
+	</body>
+</html>

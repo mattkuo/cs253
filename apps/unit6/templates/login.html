@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Please Login</title>
+		<link rel="stylesheet" type="text/css" href="/apps/unit6/templates/stylesheets/style.css">
+	</head>
+	<body>
+	<h1>Login</h1>
+		<form method="post">
+			<div><label>Username: </label></div>
+			<input type="text" name="username" value="{{ username }}">
+
+			<div><label>Password: </label></div>
+			<input type="password" name="password" value="{{ password }}">
+			<br>
+			<input type="submit">
+			<div class="error">{{ error }}</div>
+		</form>
+	</body>
+
+</html>

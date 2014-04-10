@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Unit 2 - Signup</title>
+    <style type="text/css">
+    h3 {color:red;}
+    </style>
+  </head>
+
+  <body>
+    <h2>Signup Here</h2>
+    <form method="post">
+      <label>Username: <input type="text" name="username" value="{{ username }}"><h3>{{ username_error }}</h3></label>
+      <br>
+      <label>Password: <input type="password" name="password" value="{{ password }}"><h3>{{ password_error }}</h3></label>
+      <br>
+      <label>Confirm Password: <input type="password" name="verify" value="{{ verify }}"><h3>{{ verify_error }}</h3></label>
+      <br>
+      <label>E-mail: <input type="text" name="email" value="{{ email }}"><h3>{{ email_error }}</h3></label>
+      <br>
+      <input type="submit">
+    </form>
+  </body>
+
+</html>

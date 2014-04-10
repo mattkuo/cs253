@@ -1,0 +1,32 @@
+application: example-tissue
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /apps/unit3/templates/stylesheets/
+  static_dir: apps/unit3/templates/stylesheets
+
+- url: /apps/unit4/templates/stylesheets/
+  static_dir: apps/unit4/templates/stylesheets
+
+- url: /apps/unit5/templates/stylesheets/
+  static_dir: apps/unit5/templates/stylesheets
+
+- url: /apps/unit6/templates/stylesheets/
+  static_dir: apps/unit6/templates/stylesheets
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+
+- name: jinja2
+  version: "latest"

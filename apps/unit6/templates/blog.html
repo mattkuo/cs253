@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/apps/unit6/templates/stylesheets/style.css">
+	<title>My Blog</title>
+</head>
+
+<body>
+	<h1>My Blog</h1>
+	<hr>
+
+	{% for post in posts %}
+	<div class="post">
+		<div class="post-subject">{{ post.subject }}</div>
+		<div class="post-content">{{ post.content }}</div>
+		<div class="post-date">{{ post.created }}</div>
+		<hr>
+	</div>
+	{% endfor %}
+	<div class="last_queried">Queried {{ last_queried }} seconds ago</div>
+</body>
+
+</html>
